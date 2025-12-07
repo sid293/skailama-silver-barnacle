@@ -1,3 +1,4 @@
 .env*
 node_modules
 skilama_postman_collection.json
+rough.md
