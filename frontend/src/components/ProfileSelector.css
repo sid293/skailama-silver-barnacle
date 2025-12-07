@@ -1,0 +1,127 @@
+.profile-selector-container {
+    position: relative;
+    width: 250px;
+}
+
+.profile-selector-trigger {
+    background: #fff;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: 10px 12px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    user-select: none;
+}
+
+.profile-selector-trigger:hover {
+    border-color: #cbd5e1;
+}
+
+.arrow {
+    font-size: 10px;
+    color: var(--text-secondary);
+}
+
+.profile-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin-top: 4px;
+    background: #fff;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-md);
+    z-index: 100;
+    overflow: hidden;
+}
+
+.dropdown-search {
+    padding: 8px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.dropdown-search input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    color: var(--text-primary);
+}
+
+.dropdown-list {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.dropdown-item {
+    padding: 8px 12px;
+    font-size: 14px;
+    color: var(--text-primary);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.dropdown-item:hover {
+    background-color: #f1f5f9;
+}
+
+.dropdown-item.selected {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.check {
+    font-size: 12px;
+}
+
+.no-results {
+    padding: 12px;
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 13px;
+}
+
+.dropdown-footer {
+    padding: 8px;
+    border-top: 1px solid var(--border-color);
+    display: flex;
+    gap: 8px;
+    background-color: #f8fafc;
+}
+
+.dropdown-footer input {
+    flex: 1;
+    padding: 6px 8px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 13px;
+    outline: none;
+}
+
+.dropdown-footer input:focus {
+    border-color: var(--primary-color);
+}
+
+.btn-add {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.btn-add:hover {
+    background-color: var(--primary-hover);
+}
+
+.btn-add:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
